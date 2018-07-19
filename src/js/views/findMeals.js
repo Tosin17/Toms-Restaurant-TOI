@@ -65,7 +65,8 @@ const renderButtons = (page, nResults, resultsPerPage) => {
         button = createButton(page, 'prev');
     }
 
-    elements.paginationButtonsHolder.insertAdjacentHTML('afterbegin', button);
+    elements.paginationButtonsHolder
+    .insertAdjacentHTML('afterbegin', button);
 }
 
 export const renderResults = (recipes, page = 1, resultsPerPage = 10) => {
